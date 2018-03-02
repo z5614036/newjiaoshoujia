@@ -1,0 +1,23 @@
+.formHeader{
+    padding: 15px 25px;
+}
+
+.box {
+    position: relative;
+    margin-bottom: 16px;
+    padding: 20px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+.box::before {
+    content: attr(title);
+    position: absolute;
+    left: 8%;
+    padding: 2px 8px;
+    color: #7ec2f3;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -150%);
+    background-color: #fff;
+}
